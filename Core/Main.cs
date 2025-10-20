@@ -3,6 +3,10 @@ using System.Runtime.InteropServices;
 using SolidWorks.Interop.sldworks;
 using SolidWorks.Interop.swpublished;
 using Microsoft.Win32;
+using System.Windows.Input;
+using SolidWorksTools;
+using System.Reflection;
+using SolidWorksTools.File;
 
 namespace INJECTOR
 {
@@ -46,7 +50,7 @@ namespace INJECTOR
             Key.SetValue("Description", "Modular macro library");
         }
         [ComUnregisterFunction]
-        private static void UnregisterAssembly(Type t) 
+        private static void UnregisterAssembly(Type t)
         {
             string Path = String.Format(@"SOFTWARE\Solidworks\Addins\{0:b}", t);
             Registry.LocalMachine.DeleteSubKey(Path);

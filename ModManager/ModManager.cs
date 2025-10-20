@@ -1,7 +1,7 @@
 ﻿using SolidWorks.Interop.sldworks;
 using System.Collections.Generic;
 
-namespace INJECTOR
+namespace INJECTOR.ModManager
 {
     public class ModManager
     {

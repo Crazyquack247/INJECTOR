@@ -1,0 +1,13 @@
+C:\Users\jbarnes\source\repos\Injector\bin\Release\INJECTOR.dll
+C:\Users\jbarnes\source\repos\Injector\bin\Release\INJECTOR.pdb
+C:\Users\jbarnes\source\repos\Injector\bin\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\jbarnes\source\repos\Injector\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\jbarnes\source\repos\Injector\bin\Release\solidworkstools.dll
+C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.csproj.AssemblyReference.cache
+C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.Modules.OnSave.OnSaveMenu.resources
+C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.csproj.GenerateResource.cache
+C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.csproj.CoreCompileInputs.cache
+C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.csproj.Up2Date
+C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.dll
+C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.pdb
+C:\Users\jbarnes\source\repos\Injector\bin\Release\INJECTOR.tlb

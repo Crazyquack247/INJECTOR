@@ -31,6 +31,14 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>INJECTOR ICON.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
@@ -84,6 +92,7 @@
     <Content Include="Icons\CLINE LOGO.png" />
     <Content Include="Icons\INJECTOR ICON.ico" />
     <Content Include="Icons\X_T ICON.png" />
+    <Content Include="INJECTOR ICON.ico" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Modules\OnSave\OnSaveMenu.resx">

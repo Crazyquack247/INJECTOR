@@ -91,9 +91,10 @@
               "RelativeDocumentMoniker": "ModManager\\ModManager.cs",
               "ToolTip": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\ModManager\\ModManager.cs",
               "RelativeToolTip": "ModManager\\ModManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T14:14:11.412Z"
+              "WhenOpened": "2025-10-20T14:14:11.412Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -103,7 +104,7 @@
               "RelativeDocumentMoniker": "Core\\Main.cs",
               "ToolTip": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\Core\\Main.cs",
               "RelativeToolTip": "Core\\Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T13:40:18.339Z",
               "EditorCaption": ""
