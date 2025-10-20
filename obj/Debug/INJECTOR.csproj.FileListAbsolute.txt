@@ -1,0 +1,7 @@
+C:\Users\jbarnes\source\repos\INJECTOR\bin\Debug\INJECTOR.dll
+C:\Users\jbarnes\source\repos\INJECTOR\bin\Debug\INJECTOR.pdb
+C:\Users\jbarnes\source\repos\INJECTOR\obj\Debug\INJECTOR.csproj.AssemblyReference.cache
+C:\Users\jbarnes\source\repos\INJECTOR\obj\Debug\INJECTOR.csproj.CoreCompileInputs.cache
+C:\Users\jbarnes\source\repos\INJECTOR\obj\Debug\INJECTOR.dll
+C:\Users\jbarnes\source\repos\INJECTOR\obj\Debug\INJECTOR.pdb
+C:\Users\jbarnes\source\repos\INJECTOR\bin\Debug\INJECTOR.tlb
