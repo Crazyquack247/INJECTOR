@@ -150,6 +150,7 @@
             this.Controls.Add(this.btnBrowse);
             this.Name = "OnSaveMenu";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OnSaveForm";
             this.ResumeLayout(false);
             this.PerformLayout();

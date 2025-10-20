@@ -1,5 +1,6 @@
 C:\Users\jbarnes\source\repos\Injector\bin\Release\INJECTOR.dll
 C:\Users\jbarnes\source\repos\Injector\bin\Release\INJECTOR.pdb
+C:\Users\jbarnes\source\repos\Injector\bin\Release\INJECTOR.tlb
 C:\Users\jbarnes\source\repos\Injector\bin\Release\Microsoft.WindowsAPICodePack.dll
 C:\Users\jbarnes\source\repos\Injector\bin\Release\Microsoft.WindowsAPICodePack.Shell.dll
 C:\Users\jbarnes\source\repos\Injector\bin\Release\solidworkstools.dll
@@ -10,4 +11,3 @@ C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.csproj.CoreCompileIn
 C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.csproj.Up2Date
 C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.dll
 C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.pdb
-C:\Users\jbarnes\source\repos\Injector\bin\Release\INJECTOR.tlb

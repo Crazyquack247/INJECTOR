@@ -9,9 +9,9 @@ namespace INJECTOR.ModManager
         private readonly int _addinId;
         private readonly List<IModule> _modules = new List<IModule>();
 
-
         public ModManager(ISldWorks swApp, int addinId)
         {
+            this.swApp = swApp;
             _addinId = addinId;
         }
 

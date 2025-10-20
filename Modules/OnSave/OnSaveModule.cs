@@ -19,6 +19,11 @@ namespace INJECTOR.Modules
 
         public void Initialize(ISldWorks swApp)
         {
+            // --- NEW CODE ---
+            this.swApp = swApp;
+            MessageBox.Show("OnSaveModule Initialized.");
+            // --- END ---
+
             // Attach to SolidWorks event interface
 
             ((DSldWorksEvents_Event)swApp).CommandOpenPreNotify += OnCommandPre;
@@ -31,30 +36,35 @@ namespace INJECTOR.Modules
 
         private int OnCommandPre(int command, int userActivationType)
         {
+            // --- NEW CODE ---
+            MessageBox.Show($"CommandPre triggered. Command ID:{command}");
+            // --- END ---
             try
             {
                 // Allow only true Save or Save As commands
+
                 bool isSaveCommand =
                     command == _saveCommandId ||
                     command == _saveAsCommandId;
 
-                if (!isSaveCommand)
-                    return 0; // Ignore everything else (menus, settings, etc.)
+                if (!isSaveCommand) 
+                return 0; // Ignore everything else (menus, settings, etc.)
 
                 // Only trigger if it's Save As or first Save on a new doc
-                if (command == _saveAsCommandId || IsFirstSave())
+
+                bool shouldIntercept = command == _saveAsCommandId || IsFirstSave();
+                if (shouldIntercept)
                 {
                     bool allow = HandleSaveIntercept();
-                    if (!allow)
-                        return 1; // cancel SolidWorks' built-in Save/Save-As window
+                    return allow ? 0 : 1;
                 }
+                return 0;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error handling save command: " + ex.Message);
+                return 0;
             }
-
-            return 0;
         }
 
         // Helper: detect unsaved document
@@ -69,10 +79,15 @@ namespace INJECTOR.Modules
 
         private bool HandleSaveIntercept()
         {
+            // --- NEW CODE ---
+            MessageBox.Show("HandleSaveIntercept called.");
+            // --- END ---
+
             if (_isFormOpen) return false;
 
             ModelDoc2 doc = swApp.IActiveDoc2;
-            if (doc == null) return false;
+            if (doc == null)
+            return false;
 
             _isFormOpen = true;
             bool allowSave = false;   // assume we’ll handle it ourselves
@@ -93,20 +108,25 @@ namespace INJECTOR.Modules
                 if (saved)
                 {
                     ApplyWindowsMetadata(fullPath, description, "");
+
                     // we handled the save → stop SolidWorks from running its own dialog
+
                     allowSave = false;
                 }
                 else
                 {
                     MessageBox.Show("Save failed or was cancelled.", "Save Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                     // optional: let SolidWorks open its Save-As if our save truly failed
+
                     allowSave = true;
                 }
             }
             else
             {
                 // user cancelled → stop default dialog too
+
                 allowSave = false;
             }
 
