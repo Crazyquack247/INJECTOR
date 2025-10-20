@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using SolidWorks.Interop.swconst;
@@ -22,12 +15,12 @@ namespace INJECTOR.Modules.OnSave
             // Populate file type dropdown
             comboBox1.Items.AddRange(new object[]
             {
-        "Part (*.SLDPRT)",
-        "Assembly (*.SLDASM)",
-        "Drawing (*.SLDDRW)",
-        "STEP File (*.STEP)",
-        "STL File (*.STL)",
-        "Parasolid (*.X_T)"
+                "Part (*.SLDPRT)",
+                "Assembly (*.SLDASM)",
+                "Drawing (*.SLDDRW)",
+                "STEP File (*.STEP)",
+                "STL File (*.STL)",
+                "Parasolid (*.X_T)"
             });
 
             // Auto-select based on SolidWorks document type

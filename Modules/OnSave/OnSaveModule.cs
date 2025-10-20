@@ -1,25 +1,17 @@
 ﻿using SolidWorks.Interop.sldworks;
-using SolidWorks.Interop.swpublished;
 using SolidWorks.Interop.swconst;
+using SolidWorks.Interop.swcommands;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace INJECTOR.Modules
 {
-    public class OnSaveModule : IModule
+    public partial class OnSaveModule : IModule
     {
         private ISldWorks swApp;
         private bool _isFormOpen = false;
-        private bool _isSaveAsTriggered = false;
-        public enum swCommands_e 
-        {
-            swCommands_Save,
-            swCommands_SaveAs
-        }
-
+        
         // Save command IDs
 
         private readonly int _saveCommandId = (int)swCommands_e.swCommands_Save;
@@ -122,17 +114,6 @@ namespace INJECTOR.Modules
             return allowSave;
         }
 
-        private string GetFileExtensionForType(int docType)
-        {
-            switch ((swDocumentTypes_e)docType)
-            {
-                case swDocumentTypes_e.swDocPART: return ".SLDPRT";
-                case swDocumentTypes_e.swDocASSEMBLY: return ".SLDASM";
-                case swDocumentTypes_e.swDocDRAWING: return ".SLDDRW";
-                default: return ".SLDPRT";
-            }
-        }
-
         private string GetDefaultSavePath(ModelDoc2 doc)
         {
             try
@@ -188,10 +169,6 @@ namespace INJECTOR.Modules
                 // Force a save to embed the changes
 
                 doc.Save3((int)swSaveAsOptions_e.swSaveAsOptions_Silent, ref errors, ref errors);
-
-                // Optional: release memory
-
-                // _swApp.CloseDoc(doc.GetTitle());
             }
             catch (Exception ex)
             {

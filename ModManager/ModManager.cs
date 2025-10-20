@@ -1,11 +1,5 @@
-﻿using INJECTOR.Modules;
-using SolidWorks.Interop.sldworks;
-using SolidWorks.Interop.swpublished;
-using System;
+﻿using SolidWorks.Interop.sldworks;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace INJECTOR
 {
@@ -18,7 +12,6 @@ namespace INJECTOR
 
         public ModManager(ISldWorks swApp, int addinId)
         {
-            swApp = swApp;
             _addinId = addinId;
         }
 
