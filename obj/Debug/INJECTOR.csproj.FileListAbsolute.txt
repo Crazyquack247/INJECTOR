@@ -10,3 +10,4 @@ C:\Users\jbarnes\source\repos\Injector\obj\Debug\INJECTOR.csproj.GenerateResourc
 C:\Users\jbarnes\source\repos\Injector\bin\Debug\Microsoft.WindowsAPICodePack.dll
 C:\Users\jbarnes\source\repos\Injector\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
 C:\Users\jbarnes\source\repos\Injector\obj\Debug\INJECTOR.csproj.Up2Date
+C:\Users\jbarnes\source\repos\Injector\bin\Debug\solidworkstools.dll
