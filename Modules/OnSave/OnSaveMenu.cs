@@ -9,12 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.WindowsAPICodePack.Dialogs;
+using SolidWorks.Interop.swconst;
 
 namespace INJECTOR.Modules.OnSave
 {
     public partial class OnSaveMenu : Form
     {
-        public OnSaveMenu()
+        public OnSaveMenu(string defaultPath = "", int docType = (int)swDocumentTypes_e.swDocPART)
         {
             InitializeComponent();
 

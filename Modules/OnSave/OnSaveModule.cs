@@ -1,5 +1,6 @@
 ﻿using SolidWorks.Interop.sldworks;
 using SolidWorks.Interop.swpublished;
+using SolidWorks.Interop.swconst;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,9 +11,14 @@ namespace INJECTOR.Modules
 {
     public class OnSaveModule : IModule
     {
-        private ISldWorks _swApp;
+        private ISldWorks swApp;
         private bool _isFormOpen = false;
         private bool _isSaveAsTriggered = false;
+        public enum swCommands_e 
+        {
+            swCommands_Save,
+            swCommands_SaveAs
+        }
 
         // Save command IDs
 
@@ -21,16 +27,14 @@ namespace INJECTOR.Modules
 
         public void Initialize(ISldWorks swApp)
         {
-            _swApp = swApp;
-
             // Attach to SolidWorks event interface
 
-            ((DSldWorksEvents_Event)_swApp).CommandOpenPreNotify += OnCommandPre;
+            ((DSldWorksEvents_Event)swApp).CommandOpenPreNotify += OnCommandPre;
         }
 
         public void Terminate()
         {
-            ((DSldWorksEvents_Event)_swApp).CommandOpenPreNotify -= OnCommandPre;
+            ((DSldWorksEvents_Event)swApp).CommandOpenPreNotify -= OnCommandPre;
         }
 
         private int OnCommandPre(int command, int userActivationType)
@@ -64,7 +68,7 @@ namespace INJECTOR.Modules
         // Helper: detect unsaved document
         private bool IsFirstSave()
         {
-            ModelDoc2 doc = _swApp.IActiveDoc2;
+            ModelDoc2 doc = swApp.IActiveDoc2;
             if (doc == null) return false;
 
             string path = doc.GetPathName();
@@ -75,14 +79,14 @@ namespace INJECTOR.Modules
         {
             if (_isFormOpen) return false;
 
-            ModelDoc2 doc = _swApp.IActiveDoc2;
+            ModelDoc2 doc = swApp.IActiveDoc2;
             if (doc == null) return false;
 
             _isFormOpen = true;
             bool allowSave = false;   // assume we’ll handle it ourselves
 
             string defaultPath = GetDefaultSavePath(doc);
-            OnSaveM form = new OnSaveM(defaultPath, doc.GetType());
+            OnSave.OnSaveMenu form = new OnSave.OnSaveMenu(defaultPath, doc.GetType());
 
             DialogResult result = form.ShowDialog();
 
@@ -141,7 +145,7 @@ namespace INJECTOR.Modules
 
                 // Otherwise, use SolidWorks' current working directory
 
-                string workDir = _swApp.GetCurrentWorkingDirectory();
+                string workDir = swApp.GetCurrentWorkingDirectory();
                 if (!string.IsNullOrEmpty(workDir))
                     return workDir;
 
@@ -164,7 +168,7 @@ namespace INJECTOR.Modules
                 // Get document from path
 
                 int errors = 0;
-                ModelDoc2 doc = (ModelDoc2)_swApp.ActivateDoc3(filePath, true, (int)swRebuildOnActivation_e.swUserDecision, ref errors);
+                ModelDoc2 doc = (ModelDoc2)swApp.ActivateDoc3(filePath, true, (int)swRebuildOnActivation_e.swUserDecision, ref errors);
 
                 if (doc == null)
                 {

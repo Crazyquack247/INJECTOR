@@ -1,5 +1,6 @@
 ﻿using INJECTOR.Modules;
 using SolidWorks.Interop.sldworks;
+using SolidWorks.Interop.swpublished;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,14 +11,14 @@ namespace INJECTOR
 {
     public class ModManager
     {
-        private readonly ISldWorks _swApp;
+        private readonly ISldWorks swApp;
         private readonly int _addinId;
         private readonly List<IModule> _modules = new List<IModule>();
 
 
         public ModManager(ISldWorks swApp, int addinId)
         {
-            _swApp = swApp;
+            swApp = swApp;
             _addinId = addinId;
         }
 
@@ -28,12 +29,10 @@ namespace INJECTOR
                 // List modules here
 
                 new Modules.OnSaveModule(),
-                new Modules.X_TExport.X_TExport(_swApp)
-
             });
 
             foreach (var module in _modules)
-                module.Initialize(_swApp);
+                module.Initialize(swApp);
         }
 
         public void UnloadModules()

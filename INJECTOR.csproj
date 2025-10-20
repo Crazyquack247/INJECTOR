@@ -37,6 +37,10 @@
       <HintPath>..\..\..\..\..\Program Files\SOLIDWORKS Corp 2025\SOLIDWORKS\api\redist\SolidWorks.Interop.sldworks.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="SolidWorks.Interop.swconst">
+      <HintPath>..\..\..\..\..\Program Files\SOLIDWORKS Corp 2025\SOLIDWORKS\api\redist\SolidWorks.Interop.swconst.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="SolidWorks.Interop.swpublished">
       <HintPath>..\..\..\..\..\Program Files\SOLIDWORKS Corp 2025\SOLIDWORKS\api\redist\SolidWorks.Interop.swpublished.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -60,21 +64,10 @@
     <Compile Include="Modules\OnSave\OnSaveMenu.Designer.cs">
       <DependentUpon>OnSaveMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\X_TExport\ExportForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\X_TExport\ExportForm.Designer.cs">
-      <DependentUpon>ExportForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ModManager\IModule.cs" />
     <Compile Include="ModManager\ModManager.cs" />
-    <Compile Include="Modules\OnSave\OnSaveM.cs" />
-    <Compile Include="Modules\OnSave\OnSaveM.Designer.cs">
-      <DependentUpon>OnSaveM.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modules\OnSave\OnSaveModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Modules\X_TExport\X_TExport.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icons\CLINE LOGO.png" />
@@ -84,12 +77,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Modules\OnSave\OnSaveMenu.resx">
       <DependentUpon>OnSaveMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\X_TExport\ExportForm.resx">
-      <DependentUpon>ExportForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\OnSave\OnSaveM.resx">
-      <DependentUpon>OnSaveM.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

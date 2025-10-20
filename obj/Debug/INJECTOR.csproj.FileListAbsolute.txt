@@ -5,3 +5,8 @@ C:\Users\jbarnes\source\repos\INJECTOR\obj\Debug\INJECTOR.csproj.CoreCompileInpu
 C:\Users\jbarnes\source\repos\INJECTOR\obj\Debug\INJECTOR.dll
 C:\Users\jbarnes\source\repos\INJECTOR\obj\Debug\INJECTOR.pdb
 C:\Users\jbarnes\source\repos\INJECTOR\bin\Debug\INJECTOR.tlb
+C:\Users\jbarnes\source\repos\Injector\obj\Debug\INJECTOR.Modules.OnSave.OnSaveMenu.resources
+C:\Users\jbarnes\source\repos\Injector\obj\Debug\INJECTOR.csproj.GenerateResource.cache
+C:\Users\jbarnes\source\repos\Injector\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\jbarnes\source\repos\Injector\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\jbarnes\source\repos\Injector\obj\Debug\INJECTOR.csproj.Up2Date
