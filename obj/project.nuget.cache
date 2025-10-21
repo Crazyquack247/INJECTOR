@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "41hHSPpcqVM=",
+  "dgSpecHash": "gy+F8Dh+ufg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jbarnes\\source\\repos\\Injector\\INJECTOR.csproj",
+  "projectFilePath": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\INJECTOR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jbarnes\\.nuget\\packages\\microsoft-windowsapicodepack-core\\1.1.5\\microsoft-windowsapicodepack-core.1.1.5.nupkg.sha512",
     "C:\\Users\\jbarnes\\.nuget\\packages\\microsoft-windowsapicodepack-shell\\1.1.5\\microsoft-windowsapicodepack-shell.1.1.5.nupkg.sha512"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jbarnes\\source\\repos\\Injector\\INJECTOR.csproj": {}
+    "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\INJECTOR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jbarnes\\source\\repos\\Injector\\INJECTOR.csproj": {
+    "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\INJECTOR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jbarnes\\source\\repos\\Injector\\INJECTOR.csproj",
+        "projectUniqueName": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\INJECTOR.csproj",
         "projectName": "INJECTOR",
-        "projectPath": "C:\\Users\\jbarnes\\source\\repos\\Injector\\INJECTOR.csproj",
+        "projectPath": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\INJECTOR.csproj",
         "packagesPath": "C:\\Users\\jbarnes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jbarnes\\source\\repos\\Injector\\obj\\",
+        "outputPath": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "UsingMicrosoftNETSdk": false,
