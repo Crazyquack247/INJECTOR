@@ -13,6 +13,7 @@ namespace INJECTOR.Modules.OnSave
             InitializeComponent();
 
             // Populate file type dropdown
+
             comboBox1.Items.AddRange(new object[]
             {
                 "Part (*.SLDPRT)",
@@ -24,6 +25,7 @@ namespace INJECTOR.Modules.OnSave
             });
 
             // Auto-select based on SolidWorks document type
+
             switch ((swDocumentTypes_e)docType)
             {
                 case swDocumentTypes_e.swDocPART:
@@ -41,6 +43,7 @@ namespace INJECTOR.Modules.OnSave
             }
 
             // Auto-fill default save location
+
             if (!string.IsNullOrWhiteSpace(defaultPath))
             {
                 SelectedFolderPath = defaultPath;
@@ -91,6 +94,7 @@ namespace INJECTOR.Modules.OnSave
         private void btnSave_Click(object sender, EventArgs e)
         {
             // Validate all required fields
+
             if (string.IsNullOrWhiteSpace(FileName))
             {
                 MessageBox.Show("Please enter a file name.", "Missing Information",

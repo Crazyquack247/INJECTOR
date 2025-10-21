@@ -13,7 +13,6 @@ namespace INJECTOR
         {
             this.swApp = swApp;
         }
-
         public void LoadModules()
         {
             _modules.AddRange(new IModule[]

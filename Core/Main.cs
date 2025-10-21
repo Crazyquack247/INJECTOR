@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 using SolidWorks.Interop.sldworks;
 using SolidWorks.Interop.swpublished;
+using SolidWorks.Interop.swconst;
 using Microsoft.Win32;
 using System.Windows.Input;
 using SolidWorksTools;
@@ -12,14 +13,14 @@ namespace INJECTOR
 {
     public class Main : SwAddin
     {
-        SldWorks swApp;
+        ISldWorks swApp;
         int SessionCookie;
         private ModManager _moduleManager;
 
         #region --- Solidworks Connection ---
         public bool ConnectToSW(object ThisSW, int Cookie)
         {
-            swApp = ThisSW as SldWorks;
+            swApp = ThisSW as ISldWorks;
             swApp.SetAddinCallbackInfo2(0, this, Cookie);
             SessionCookie = Cookie;
             _moduleManager = new ModManager(swApp);
