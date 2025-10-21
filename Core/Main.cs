@@ -11,6 +11,12 @@ using SolidWorksTools.File;
 
 namespace INJECTOR
 {
+    //[Guid("cf574a77-1b29-4092-9a7b-66f9488a52c4"), ComVisible(true)]
+    [SwAddin(
+        Description = "Macro library and executor for Solidworks",
+        Title = "INJECTOR",
+        LoadAtStartup = true
+        )]
     public class Main : SwAddin
     {
         ISldWorks swApp;

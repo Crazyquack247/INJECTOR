@@ -3,16 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\core\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|solutionrelative:core\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\modmanager\\imodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|solutionrelative:modmanager\\imodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|INJECTOR||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|c:\\users\\jbarnes\\source\\repos\\injector\\modules\\onsave\\onsavemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|solutionrelative:modules\\onsave\\onsavemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\modules\\onsave\\onsavemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|solutionrelative:modules\\onsave\\onsavemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\core\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|solutionrelative:core\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\modmanager\\modmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +30,7 @@
       "RelativeMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|solutionrelative:modules\\onsave\\onsavemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\modmanager\\imodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|solutionrelative:modmanager\\imodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF574A77-1B29-4092-9A7B-66F9488A52C4}|INJECTOR.csproj|c:\\users\\jbarnes\\source\\repos\\injector\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +40,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "INJECTOR",
+              "DocumentMoniker": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\INJECTOR.csproj",
+              "RelativeDocumentMoniker": "INJECTOR.csproj",
+              "ToolTip": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\INJECTOR.csproj",
+              "RelativeToolTip": "INJECTOR.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-21T18:54:53.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "OnSaveMenu.cs",
               "DocumentMoniker": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\Modules\\OnSave\\OnSaveMenu.cs",
               "RelativeDocumentMoniker": "Modules\\OnSave\\OnSaveMenu.cs",
@@ -51,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "OnSaveMenu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\Modules\\OnSave\\OnSaveMenu.cs",
               "RelativeDocumentMoniker": "Modules\\OnSave\\OnSaveMenu.cs",
@@ -63,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "OnSaveModule.cs",
               "DocumentMoniker": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\Modules\\OnSave\\OnSaveModule.cs",
               "RelativeDocumentMoniker": "Modules\\OnSave\\OnSaveModule.cs",
@@ -75,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "IModule.cs",
               "DocumentMoniker": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\ModManager\\IModule.cs",
               "RelativeDocumentMoniker": "ModManager\\IModule.cs",
@@ -83,11 +101,12 @@
               "RelativeToolTip": "ModManager\\IModule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T14:14:19.451Z"
+              "WhenOpened": "2025-10-20T14:14:19.451Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ModManager.cs",
               "DocumentMoniker": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\ModManager\\ModManager.cs",
               "RelativeDocumentMoniker": "ModManager\\ModManager.cs",
@@ -99,15 +118,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\Core\\Main.cs",
               "RelativeDocumentMoniker": "Core\\Main.cs",
               "ToolTip": "C:\\Users\\jbarnes\\source\\repos\\INJECTOR\\Core\\Main.cs",
               "RelativeToolTip": "Core\\Main.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwA8AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T13:40:18.339Z"
+              "WhenOpened": "2025-10-20T13:40:18.339Z",
+              "EditorCaption": ""
             }
           ]
         }

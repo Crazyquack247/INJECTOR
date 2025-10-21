@@ -1,0 +1,17 @@
+C:\Users\jbarnes\source\repos\INJECTOR\bin\x64\Release\INJECTOR.dll
+C:\Users\jbarnes\source\repos\INJECTOR\bin\x64\Release\INJECTOR.pdb
+C:\Users\jbarnes\source\repos\INJECTOR\bin\x64\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\jbarnes\source\repos\INJECTOR\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\jbarnes\source\repos\INJECTOR\bin\x64\Release\solidworkstools.dll
+C:\Users\jbarnes\source\repos\INJECTOR\obj\x64\Release\INJECTOR.csproj.AssemblyReference.cache
+C:\Users\jbarnes\source\repos\INJECTOR\obj\x64\Release\Interop.SldWorks.dll
+C:\Users\jbarnes\source\repos\INJECTOR\obj\x64\Release\Interop.SwCommands.dll
+C:\Users\jbarnes\source\repos\INJECTOR\obj\x64\Release\INJECTOR.csproj.ResolveComReference.cache
+C:\Users\jbarnes\source\repos\INJECTOR\obj\x64\Release\INJECTOR.Modules.OnSave.OnSaveMenu.resources
+C:\Users\jbarnes\source\repos\INJECTOR\obj\x64\Release\INJECTOR.Properties.Resources.resources
+C:\Users\jbarnes\source\repos\INJECTOR\obj\x64\Release\INJECTOR.csproj.GenerateResource.cache
+C:\Users\jbarnes\source\repos\INJECTOR\obj\x64\Release\INJECTOR.csproj.CoreCompileInputs.cache
+C:\Users\jbarnes\source\repos\INJECTOR\obj\x64\Release\INJECTOR.csproj.Up2Date
+C:\Users\jbarnes\source\repos\INJECTOR\obj\x64\Release\INJECTOR.dll
+C:\Users\jbarnes\source\repos\INJECTOR\obj\x64\Release\INJECTOR.pdb
+C:\Users\jbarnes\source\repos\INJECTOR\bin\x64\Release\INJECTOR.tlb
