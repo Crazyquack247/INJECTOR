@@ -16,9 +16,12 @@ namespace INJECTOR.Modules
 
         private readonly int _saveCommandId = (int)swCommands_e.swCommands_Save;
         private readonly int _saveAsCommandId = (int)swCommands_e.swCommands_SaveAs;
+        private readonly int _saveLocalCommandId = (int)swCommands_e.swCommands_SaveLocally;
 
         public void Initialize(ISldWorks swApp)
         {
+            this.swApp = swApp;
+
             // Attach to SolidWorks event interface
 
             ((DSldWorksEvents_Event)swApp).CommandOpenPreNotify += OnCommandPre;
@@ -34,14 +37,21 @@ namespace INJECTOR.Modules
             try
             {
                 // Allow only true Save or Save As commands
-                bool isSaveCommand =
-                    command == _saveCommandId ||
-                    command == _saveAsCommandId;
 
-                if (!isSaveCommand)
+                bool isSaveCommand = false;
+
+                if (command == _saveCommandId || command == _saveAsCommandId || command == _saveLocalCommandId)
+                {
+                    isSaveCommand = true;
+                }
+
+                if (isSaveCommand == false)
+                {
                     return 0; // Ignore everything else (menus, settings, etc.)
+                }
 
                 // Only trigger if it's Save As or first Save on a new doc
+                
                 if (command == _saveAsCommandId || IsFirstSave())
                 {
                     bool allow = HandleSaveIntercept();
@@ -58,6 +68,7 @@ namespace INJECTOR.Modules
         }
 
         // Helper: detect unsaved document
+
         private bool IsFirstSave()
         {
             ModelDoc2 doc = swApp.IActiveDoc2;

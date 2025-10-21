@@ -14,12 +14,16 @@ namespace INJECTOR
     {
         SldWorks swApp;
         int SessionCookie;
+        private ModManager _moduleManager;
+
         #region --- Solidworks Connection ---
         public bool ConnectToSW(object ThisSW, int Cookie)
         {
             swApp = ThisSW as SldWorks;
             swApp.SetAddinCallbackInfo2(0, this, Cookie);
             SessionCookie = Cookie;
+            _moduleManager = new ModManager(swApp);
+            _moduleManager.LoadModules();
 
             // This is where UI is built
 
@@ -29,6 +33,7 @@ namespace INJECTOR
         {
             // This is where UI is dismantled
 
+            _moduleManager?.UnloadModules();
             GC.Collect();
             swApp = null;
 
