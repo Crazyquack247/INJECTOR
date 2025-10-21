@@ -9,9 +9,15 @@ namespace INJECTOR.ModManager
         private readonly int _addinId;
         private readonly List<IModule> _modules = new List<IModule>();
 
+<<<<<<< HEAD
         public ModManager(ISldWorks swApp, int addinId)
         {
             this.swApp = swApp;
+=======
+
+        public ModManager(ISldWorks swApp, int addinId)
+        {
+>>>>>>> parent of 88fe155 (Merge pull request #1 from Crazyquack247/OnSave-Functionality)
             _addinId = addinId;
         }
 

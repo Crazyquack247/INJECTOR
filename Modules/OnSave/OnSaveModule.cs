@@ -19,11 +19,14 @@ namespace INJECTOR.Modules
 
         public void Initialize(ISldWorks swApp)
         {
+<<<<<<< HEAD
             // --- NEW CODE ---
             this.swApp = swApp;
             MessageBox.Show("OnSaveModule Initialized.");
             // --- END ---
 
+=======
+>>>>>>> parent of 88fe155 (Merge pull request #1 from Crazyquack247/OnSave-Functionality)
             // Attach to SolidWorks event interface
 
             ((DSldWorksEvents_Event)swApp).CommandOpenPreNotify += OnCommandPre;
@@ -42,7 +45,11 @@ namespace INJECTOR.Modules
             try
             {
                 // Allow only true Save or Save As commands
+                bool isSaveCommand =
+                    command == _saveCommandId ||
+                    command == _saveAsCommandId;
 
+<<<<<<< HEAD
                 bool isSaveCommand =
                     command == _saveCommandId ||
                     command == _saveAsCommandId;
@@ -54,6 +61,13 @@ namespace INJECTOR.Modules
 
                 bool shouldIntercept = command == _saveAsCommandId || IsFirstSave();
                 if (shouldIntercept)
+=======
+                if (!isSaveCommand)
+                    return 0; // Ignore everything else (menus, settings, etc.)
+
+                // Only trigger if it's Save As or first Save on a new doc
+                if (command == _saveAsCommandId || IsFirstSave())
+>>>>>>> parent of 88fe155 (Merge pull request #1 from Crazyquack247/OnSave-Functionality)
                 {
                     bool allow = HandleSaveIntercept();
                     return allow ? 0 : 1;

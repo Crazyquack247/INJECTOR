@@ -11,15 +11,3 @@ C:\Users\jbarnes\source\repos\Injector\bin\Debug\Microsoft.WindowsAPICodePack.dl
 C:\Users\jbarnes\source\repos\Injector\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
 C:\Users\jbarnes\source\repos\Injector\obj\Debug\INJECTOR.csproj.Up2Date
 C:\Users\jbarnes\source\repos\Injector\bin\Debug\solidworkstools.dll
-C:\Users\jpb24\source\repos\INJECTOR\bin\Debug\INJECTOR.dll
-C:\Users\jpb24\source\repos\INJECTOR\bin\Debug\INJECTOR.pdb
-C:\Users\jpb24\source\repos\INJECTOR\bin\Debug\INJECTOR.tlb
-C:\Users\jpb24\source\repos\INJECTOR\bin\Debug\Microsoft.WindowsAPICodePack.dll
-C:\Users\jpb24\source\repos\INJECTOR\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
-C:\Users\jpb24\source\repos\INJECTOR\obj\Debug\INJECTOR.csproj.AssemblyReference.cache
-C:\Users\jpb24\source\repos\INJECTOR\obj\Debug\INJECTOR.Modules.OnSave.OnSaveMenu.resources
-C:\Users\jpb24\source\repos\INJECTOR\obj\Debug\INJECTOR.csproj.GenerateResource.cache
-C:\Users\jpb24\source\repos\INJECTOR\obj\Debug\INJECTOR.csproj.CoreCompileInputs.cache
-C:\Users\jpb24\source\repos\INJECTOR\obj\Debug\INJECTOR.csproj.Up2Date
-C:\Users\jpb24\source\repos\INJECTOR\obj\Debug\INJECTOR.dll
-C:\Users\jpb24\source\repos\INJECTOR\obj\Debug\INJECTOR.pdb

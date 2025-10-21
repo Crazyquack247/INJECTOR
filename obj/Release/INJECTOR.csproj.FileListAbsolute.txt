@@ -11,3 +11,7 @@ C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.csproj.CoreCompileIn
 C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.csproj.Up2Date
 C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.dll
 C:\Users\jbarnes\source\repos\Injector\obj\Release\INJECTOR.pdb
+<<<<<<< HEAD
+=======
+C:\Users\jbarnes\source\repos\Injector\bin\Release\INJECTOR.tlb
+>>>>>>> parent of 88fe155 (Merge pull request #1 from Crazyquack247/OnSave-Functionality)

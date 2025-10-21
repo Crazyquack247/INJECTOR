@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jpb24\\source\\repos\\INJECTOR\\INJECTOR.csproj": {}
+    "C:\\Users\\jbarnes\\source\\repos\\Injector\\INJECTOR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jpb24\\source\\repos\\INJECTOR\\INJECTOR.csproj": {
+    "C:\\Users\\jbarnes\\source\\repos\\Injector\\INJECTOR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jpb24\\source\\repos\\INJECTOR\\INJECTOR.csproj",
+        "projectUniqueName": "C:\\Users\\jbarnes\\source\\repos\\Injector\\INJECTOR.csproj",
         "projectName": "INJECTOR",
-        "projectPath": "C:\\Users\\jpb24\\source\\repos\\INJECTOR\\INJECTOR.csproj",
-        "packagesPath": "C:\\Users\\jpb24\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jpb24\\source\\repos\\INJECTOR\\obj\\",
+        "projectPath": "C:\\Users\\jbarnes\\source\\repos\\Injector\\INJECTOR.csproj",
+        "packagesPath": "C:\\Users\\jbarnes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jbarnes\\source\\repos\\Injector\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jpb24\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jbarnes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
