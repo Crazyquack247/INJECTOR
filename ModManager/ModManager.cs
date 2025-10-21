@@ -1,18 +1,17 @@
 ﻿using SolidWorks.Interop.sldworks;
 using System.Collections.Generic;
+using System.Windows;
 
-namespace INJECTOR.ModManager
+namespace INJECTOR
 {
     public class ModManager
     {
         private readonly ISldWorks swApp;
-        private readonly int _addinId;
         private readonly List<IModule> _modules = new List<IModule>();
 
-
-        public ModManager(ISldWorks swApp, int addinId)
+        public ModManager(ISldWorks swApp)
         {
-            _addinId = addinId;
+            this.swApp = swApp;
         }
 
         public void LoadModules()
